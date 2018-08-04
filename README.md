@@ -3,10 +3,12 @@ Simple Python script to monitor IP SMTP reputation score. Designed to
 be easily used with other monitoring/alerting tools such as Zabbix. Should work
 on any system with Python 2.x/3.x
 
+Right now uses only score.senderscore.com service.
 
 Description
 ---------
-Script will check what is SMTP reputation of given IP.
+Script will check what is SMTP reputation of given IP. Returns score of the IP
+on given RBL. In case of query error or if IP is not listed, returns 0 (zero).
 Detailed mode (-d) diplays RBL name and score.
 
 
